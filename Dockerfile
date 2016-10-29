@@ -1,4 +1,4 @@
-FROM cbwang/ssr-docker
+FROM linyuhc001/ssr-docker
 
 ENV KCP_VER 20161028
 
