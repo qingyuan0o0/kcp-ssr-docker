@@ -17,4 +17,4 @@ ADD start.sh /start.sh
 RUN chmod +x /start.sh
 
 EXPOSE 8080/tcp 8080/udp 29900/udp
-ENTRYPOINT ["/start.sh"]
+ENTRYPOINT ["/usr/bin/supervisord"]
