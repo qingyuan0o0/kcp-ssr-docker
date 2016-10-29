@@ -17,5 +17,5 @@ ADD start.sh /start.sh
 RUN chmod +x /start.sh
     
 ENV KCPTUN_ARGS="-l :29900 -t 127.0.0.1:8080 -crypt salsa20 --mtu 1400 --sndwnd 2048 --rcvwnd 2048 --mode fast2"
-EXPOSE 8989/tcp 8989/udp 29900/udp
+EXPOSE 8080/tcp 8080/udp 29900/udp
 ENTRYPOINT ["/start.sh"]
