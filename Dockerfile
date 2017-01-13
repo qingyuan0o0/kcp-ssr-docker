@@ -1,6 +1,6 @@
 FROM linyuhc001/ssr-docker
 
-ENV KCP_VER 20161222
+ENV KCP_VER 20170112
 
 RUN \
     apk add --no-cache --virtual .build-deps curl \
