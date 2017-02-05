@@ -16,5 +16,5 @@ COPY supervisord.conf /etc/supervisord.conf
 ADD start.sh /start.sh
 RUN chmod +x /start.sh
 
-EXPOSE 8080/tcp 8080/udp 29900/udp
+EXPOSE 8989/tcp 8989/udp 29900/udp
 ENTRYPOINT ["/usr/bin/supervisord"]
